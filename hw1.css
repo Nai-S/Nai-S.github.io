@@ -6,8 +6,7 @@
 
     	body{
     		margin:20px;
-            /*background-color:coral;*/
-            background-image: url("OptBayBridgeWine.jpg");
+            background-image: url("optBayBridgeWine.jpg");
     		background-repeat: repeat;
             background-size: 1200px auto;
             background-attachment: relative;
