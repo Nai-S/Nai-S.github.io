@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="JS Basic Operations- counting positives, negatives, and zero number from five user inputs.">
+    <title>Homework Assignment 2 - Basic Operations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="hw2p3.js"></script>
+	
+    
+     
+    
+</head>
+
+<body>
+	<header>
+		<h1>JavaScript Basic Operations</h1>
+		<nav>
+			<a href="hw2.html" class="small">Main Page</a>
+			<a href="hw2p1.html" class="small" >Part 1</a>
+			<a href="hw2p2.html" class="small">Part 2</a>
+			<a href="hw2p3.html" class="small" style="background-color:#5b77a3;">Part 3</a>
+			<a href="extraCredit.html" class="small">Extra Credit</a>
+		</nav>
+	</header>
+<hr>
+	<main>	
+		<section>
+			<h2>Part 3</h2>
+				
+			<p>Insert 5 integers below to find the count of positives, negatives and zeros. </p>
+			<form id="formInt" name="formInt">
+				<div>
+				<label for="int0">Insert first integer:</label>
+				<input type="number" name="int0" id="int0" value="0">
+				<br>
+				<label for="int1">Insert second integer:</label>
+				<input type="number" name="int1" id="int1" value="0">
+				<br>
+				<label for="int2">Insert third integer:</label>
+				<input type="number" name="int2" id="int2" value="0">
+				<br>
+				<label for="int3">Insert fourth integer:</label>
+				<input type="number" name="int3" id="int3" value="0">
+				<br>
+				<label for="int4">Insert fifth integer:</label>
+				<input type="number" name="int4" id="int4" value="0">
+				<br>
+				</div>
+				<label for="resultInt">Result:</label><br>
+				<textarea name="resultInt" id="resultInt" rows="8" cols="40"></textarea>
+				<br>
+				<input type="reset" value="RESET" class="button" onclick="document.getElementById('int0').focus();">
+				<input type="button" value="SUBMIT" class="button" onclick="calcInt();">
+			</form>
+		</section>
+	</main>
+	<hr>
+</body>
+</html>

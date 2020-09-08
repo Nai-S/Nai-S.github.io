@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="JS Basic Operations using JS to find the sum, average and product from three user integer input.">
+    <title>Homework Assignment 2 - Basic Operations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="hw2p2.js"></script>
+	
+    
+     
+    
+</head>
+
+<body>
+	<header>
+		<h1>JavaScript Basic Operations</h1>
+		<nav>
+			<a href="hw2.html" class="small">Main Page</a>
+			<a href="hw2p1.html" class="small" >Part 1</a>
+			<a href="hw2p2.html" class="small" style="background-color:#5b77a3;">Part 2</a>
+			<a href="hw2p3.html" class="small">Part 3</a>
+			<a href="extraCredit.html" class="small">Extra Credit</a>
+		</nav>
+	</header>
+<hr>
+	<main>
+		<section>
+			<h2>Part 2</h2>
+				
+			<p>Please enter 3 numbers to find the sum, average and product.</p>
+			<form id="myform">
+				<div>
+				<label for="n1">Insert first number:</label>
+				<input type="text" id="n1" autofocus>
+				<br>
+				<label for="n2">Insert second number:</label>
+				<input type="text" id="n2">
+				<br>
+				<label for="n3">Insert third number:</label>
+				<input type="text" id="n3">
+				<br>
+				</div>
+				<label for="result">Result:</label><br>
+				<textarea id="result" rows="4" readonly></textarea>
+				<br>
+				<input type="reset" value="reset" class="button" onclick="res();">
+				<input type="button" value="calculate" class="button" onclick="calc(); return(false);">
+				<br><br>
+				<button type="button" class="button">
+					Click to fade results
+				</button>
+			</form>
+			<p id="error"></p>
+		</section>
+	</main>
+	<hr>
+
+</body>
+</html>

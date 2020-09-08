@@ -6,26 +6,35 @@
 
     	body{
     		margin:20px;
-    		background-color:coral;
+            /*background-color:coral;*/
+            background-image: url("OptBayBridgeWine.jpg");
+    		background-repeat: repeat;
+            background-size: 1200px auto;
+            background-attachment: relative;
+            background-position: center;
     		border: 2px solid white;
+            padding: 0 30px 0 30px;
     		-moz-box-shadow:    inset 0 0 10px #000000;
    			-webkit-box-shadow: inset 0 0 10px #000000;
    			box-shadow:         inset 0 0 10px #000000;
     		font: 2em Arial;
-    		color: #333333;
+    		color: black;
     		text-align: center;
 
     	}
 
-    	h1{
-    		text-shadow: 2px 2px 5px white;
+    	h1, h2, p, label, table {
+            font-style: outline;
+            color: white;
+    		text-shadow: 8px 8px 8px black;
     	}
     
 
-    	.button{
+    	.button, a {
     		  width: 198px;
     		  text-decoration: none;
 			  background-color: cyan;
+              margin-bottom: 0px;
 			  padding: 2px 6px 2px 6px;
 			  border-top: 1px solid #CCCCCC;
 			  border-right: 2px solid #333333;
@@ -34,18 +43,60 @@
 			  -moz-box-shadow:    inset 0 0 10px #000000;
    			  -webkit-box-shadow: inset 0 0 10px #000000;
    			  box-shadow:         inset 0 0 10px #000000;
-			 
+              font: 1em Arial;
+              color: #333333;
+              text-align: center;
+        }
+		#flip {
+            width: 500px;
+
 		}
 		ol{
 			list-style: none;
 			padding-left: 0;
 			
 		}
-		 li{
+		 li, table {
 		 	margin: 5px;
 		 	display: inline-flex; 	
 
-
 		 }
+         textarea{
+            width: 300px;
+            height: 200px;
+            font-size: .75em;
+         }
+   
+    .small{
+        font-size:0.60em;
+        font-weight: bold;
 
+    }
+    div > label {
+        display: inline-block;
+        width: 350px;
+        text-align: right;
+        
+
+    }
+    input {
+        margin: 0;
+        padding: 0;
+        width: auto ;
+        height: auto;
+        text-align: right;
+        font-size: .75em;
+    }
+   
     
+   #currency, #flip {
+     display:inline-block;
+    width: 75%;
+
+  }
+
+        
+        
+   
+    
+
