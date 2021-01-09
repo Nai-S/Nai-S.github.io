@@ -46,8 +46,8 @@
     	 #bio {
     	 	padding: 20px 60px 20px 20px;
     	 }
-    	 .wrapper {
-    		
+    	 .grid {
+    		display: grid;
     		border: 6px solid black; 
     		padding: 0;
     	}
@@ -115,9 +115,9 @@
     	@media only all and (max-width: 600px) {
   /* For mobile phones: */
 
-    section, div, header, main, footer, img, p {
+    .grid {
             display: block;
-            width: 100%;
+            
   
 }
 
@@ -128,8 +128,8 @@
 </head>
 <body>
 
-	<div class="wrapper">
-		<header >
+	<div class="grid">
+		<header class="grid-area grid-area-1">
 			<img src="Logo.png" id="logo">
 			
 			
@@ -146,7 +146,7 @@
 		</header>
 	
 		
-		<main >
+		<main class="grid-area grid-area-2">
 <hr>
 		
 			<h1>CHEF VICTOR F VELA</h1>
