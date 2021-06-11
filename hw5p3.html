@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Using arrays to give State info">
+    <title>Homework 5 - Arrays - Part 3</title>
+
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="hw5p3.js"></script>
+  
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+			<a href="hw5.html" class="button" aria-label="homework 5 page">HW 5 Page</a>
+			<a href="hw5p1.html" class="button" aria-label="part 1 validating input box"> Part 1</a>
+			<a href="hw5p2.html" class="button" aria-label="part 2 pulldown menus"> Part 2</a>
+		</nav>
+		
+		<h1>Part 3</h1>
+	</header>
+	<main>
+		<table>
+			<caption>State Information</caption>
+			<thead>
+			<tr>
+			<th scope="col" >State Name</th>
+			<th scope="col" aria-label="state abbreviation">State Abbr</th>
+			
+			<th scope="col" >Capital</th>
+			<th scope="col" >Population</th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr>
+			<th scope="row">Alabama</th>
+			<td >AL</td>	
+			<td >Montgomery</td>		
+			<td >4,887,871</td>	
+			</tr>
+
+			<tr>
+			<th scope="row">Alaska</th>	
+			<td>AK</td>	
+			<td>Juneau</td>		
+			<td>737,438</td>	
+			</tr>
+
+			<tr>
+			<th scope="row">Arizona</th>
+			<td>AZ</td>					
+			<td>Pheonix</td>		
+			<td>7,171,646</td>	
+			</tr>
+
+			<tr>
+			<th scope="row">Arkansas</th>	
+			<td>AR</td>	
+			<td>Little Rock</td>		
+			<td>3,010,825</td>	
+			</tr>
+
+			<tr>
+			<th scope="row">California</th>
+			<td>CA</td>				
+			<td>Sacramento</td>		
+			<td>39,557,045</td>	
+			</tr>
+
+			<tr>
+			<th scope="row">Colorado</th>
+			<td>CO</td>		
+			<td>Denver</td>		
+			<td>5,694,564</td>	
+			</tr>
+			</tbody>
+		</table>
+
+<br>
+
+		<form name="SearchForm">
+			
+			<label for="inputState">Enter a State (example: CA or California):</label>
+			<input type="text" size="15" name="inputState" id="inputState" autofocus> 
+			<input type="button" value=" State Info " name="search" id="search" class="button" onclick="getInfo();">
+
+<br>
+
+			<p>Thanks for your inquiry, here is the information you requested:</p>
+		<!-- 	positioning the errMsg is important for the page to render properply  -->
+			<input type="text" size="20" name="errMsg" id="errMsg" style="display: none;text-align: center;">
+			<span id="stateAbbr" ></span><br>
+			<span id="state" ></span><br>
+			<span id="capital" ></span><br>
+			<span id="pop" ></span><br>
+			
+			<!-- Below only is another way to display results in input text fields correlated with the js that commented out
+			<label for="stateAbbr">State Abbr = </label>
+			<input type="text" size="15" name="stateAbbr" id="stateAbbr" disabled=""><br>
+			<label for="state">State = </label>
+			<input type="text" size="15" name="state" id="state" disabled=""><br>
+			<label for="capital">Capital = </label>
+			<input type="text" size="15" name="capital" id="capital" disabled=""><br>
+			<label for="pop">Population = </label>
+			<input type="text" size="15" name="pop" id="pop" disabled=""> -->
+
+			<input type="reset" value="Reset" class="button" onclick="location.reload();">
+		</form>
+	</main>
+	
+</body>
+</html>

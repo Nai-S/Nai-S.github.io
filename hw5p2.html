@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Two pulldown menus, one with onchange event handler and the other with onclick event handler">
+    <title>Homework 5 - Arrays - Part 2 </title>
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="hw5p2.js"></script>
+    <style>
+    	h2 {
+    		font-size: 1em; font-weight: normal;
+    	}
+    </style>  
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+			<a href="hw5.html" class="button" aria-label="homework 5 page">HW 5 Page</a>
+			<a href="hw5p1.html" class="button" aria-label="part 1 validating input box"> Part 1</a>
+			<a href="hw5p3.html" class="button" aria-label="part 3 state info"> Part 3</a>
+		</nav>
+		<h1>Part 2</h1>
+		
+		
+	</header>
+	<main>
+		<h2>Event Handlers</h2>
+		<p> ~ onchange & onclick~</p>
+		<form>
+			<h2>Choose your favorite online shopping website (using onChange event handler)</h2>
+			<p>Note: Once a selection is made, you will be automatically taken to the website in a new tab/window</p>
+				<select name="storeList" onChange="goToNewPage(this.form);">
+					<option>Select one:</option>
+					<option value="http://www.amazon.com/">Amazon</option>
+					<option value="http://www.target.com/">Target</option>
+					<option value="http://www.costco.com/">Costco</option>
+					<option value="http://www.walmart.com/">Walmart</option>
+				</select>
+		</form>
+
+<br><br>
+
+		<form>
+			<h2>Choose your favorite online shopping website (using onClick event handler)</h2>
+			<p>Note:Click "Go" to be taken to the selcted website</p>
+				<select name="storeList">
+					<option>Select one:</option>
+					<option value="http://www.amazon.com/">Amazon</option>
+					<option value="http://www.target.com/">Target</option>
+					<option value="http://www.costco.com/">Costco</option>
+					<option value="http://www.walmart.com/">Walmart</option>
+				</select>
+			<input type="button" class="button" value="Go" onClick="goToNewPage(this.form);" style="max-width: 70px;">
+		</form>
+	</main>
+	
+</body>
+</html>

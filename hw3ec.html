@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="description" content="JS Functions-elementary multiplication learning program with Math.Random()">
+    <title>Homework 3 - Functions - Extra Credit</title>
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="hw3ec.js"></script>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+			<a href="hw3.html" class="button" aria-label="homework 3">HW 3 Page</a>
+			<a href="hw3p1.html" class="button" aria-label="part 1 grade average">Part 1</a>
+			<a href="hw3p2.html" class="button" aria-label="part 2 earnings">Part 2</a>
+			<a href="hw3p3.html" class="button" aria-label="part 3 celsius to fahrenheit">Part 3</a>
+		</nav>
+		<h1>Extra Credit</h1>
+	</header>
+	<main>
+		<h2>Do you know the answer?</h2>
+		<form id="multiply">
+			<p>What is <span id="num1"></span> X <span id="num2"></span> ?</p>
+			<label for="userAnswer">Put you answer here:</label>
+			<input type="number" name="userAnswer" id="userAnswer">
+			<div id="results" ></div>
+			<br>
+			<input type="button" class="button" name="chkAns" id="chkAns" value="Check my answer" style="width: 300px;" onclick="getAnswer();">			
+		</form>
+		
+	</main>
+</body>
+</html>

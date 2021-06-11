@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Validating input box, radio buttons, checkboxes and selected items">
+    <title>Homework 5 - Arrays - Part 1</title>
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="hw5p1.js"></script>
+    <style>
+    	td label {
+    		margin-right: 12px;
+    		
+    	}
+    	td input {
+    		margin-left: 8px;
+    	}
+    </style>
+  
+</head>
+
+<body>
+	<header>
+		<nav>
+      <a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+			<a href="hw5.html" class="button" aria-label="homework 5 page">HW 5 Page</a>
+			<a href="hw5p2.html" class="button" aria-label="part 2 pulldown menus"> Part 2</a>
+			<a href="hw5p3.html" class="button" aria-label="part 3 state info"> Part 3</a>
+		</nav>
+		
+    <h1>Part 1</h1>
+		<p>Form validation</p>
+			
+	</header>
+	<main>		
+ 		<form action="hw5p1a.html" method="post"  id="myform" name="myform">
+ 			<table role="presentation">
+          <caption>~ input box, radio buttons, checkboxes and selected items ~</caption>
+   				<tr>
+   				<th >Name:</th>
+   				<td ><input type="text" name="name" id="name" size="20" class="required" style="text-align: center;"></td>
+   				</tr>
+   <!-- For error message to be appended correctly, must use only one parent tag (in this case <tr>)  
+and different id values for both radio and checkbox elements -->
+   				<tr>
+   				<th>Weather Preference:</th>
+   				<td><input type="radio" id="sun" name="weather" class="required" value="Sun">
+   					<label for="sun">Sun</label>
+    				<input type="radio" id="rain" name="weather" value="Rain">
+    				<label for="rain">Rain</label>
+    				<input type="radio" id="snow" name="weather" value="Snow">
+    				<label for="snow">Snow</label></td>
+   				</tr>
+   <!-- checkbox input always multiple select, whereas radio is one selction only by default -->
+   				<tr>  
+   				<th>Favorite color(s):</th>
+   				<td><input type="checkbox" id="red" name="color" value="Red" class="required">
+   					<label for="red">Red</label>
+   					<input type="checkbox" id="blue" name="color" value="Blue">
+   					<label for="blue">Blue</label>
+   					<input type="checkbox" id="green" name="color" value="Green">
+   					<label for="green">Green</label></td>   				
+   				</tr>
+   
+   				<tr>
+   				<th><label for="gen" class="label">Gender:</label></th>
+   				<td>
+   					<select name="gen" id="gen" class="required">
+      					<option value="">-Choose one-</option>
+      					<option value="female">Female</option>
+      					<option value="Male">Male</option>
+      					<option value="non-binary">non-binary</option>
+      					<option value="other">other</option>
+   					</select>
+   					</td>
+   				</tr>
+   	
+   				<tr>
+   				<td><input type="reset" class="button" value="RESET" onclick="window.location.reload();"></td>
+   				<td><input type="submit" id="submit_button" class="button" value="SUBMIT"></td>
+   				</tr>
+ 			</table>
+ 		</form>
+	</main>
+	
+</body>
+</html>

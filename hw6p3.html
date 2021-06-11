@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="CNIT 133 - Homework Assignment 6- Objects- part 3 - use String method split to extract tokens, along with replace() and substr() methods">
+    <title>Homework 6 - Objects - Part 3</title>
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://rawgit.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="hw6p3.js"></script>
+  
+</head>
+
+<body>
+	<header>
+		<nav>
+      <a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+      <a href="hw6.html" class="button" aria-label="homework 6 Page">HW 6 Page</a>
+      <a href="hw6p1.html" class="button" aria-labe="Part 1 RegExp"> Part 1</a>
+      <a href="hw6p2.html" class="button" aria-label="part 2 chartAt"> Part 2</a>
+		</nav>
+		<h1>Part 3</h1>
+	</header>
+	<main>
+
+      <form name="myForm" id="myForm">
+
+      
+
+               <label for="phone">Enter a Phone Number <br> [in the form (999) 999-9999]</label><br>
+               <input name = "phone" type = "text" size = "10" id="phone" autofocus required><br><br>
+               <input type = "button" value = "Split" class="button" onclick = "parsePhone()">
+               <br><br>
+                
+               <label for="areaCode">Area Code:</label>
+               <input name = "areaCode" type = "text" size = "3" id="areaCode" readonly="">
+            	<br>
+               <label for="first3">First 3 digits:</label>   
+               <input name = "first3" type = "text" size = "3"  id="first3" readonly="">
+               <br>
+               <label for="last4">Last 4 digits:</label>
+               <input name = "last4" type = "text" size = "4" id="last4" readonly="">
+                 <br><br>
+        
+         <input type="reset" class="button" value="Reset" onclick="window.location.reload();">
+
+      </form>
+	</main>
+	
+</body>
+</html>

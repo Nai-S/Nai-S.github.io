@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="description" content="JS Functions-calculating student's final grade average using switch function.">
+    <title>Homework 3 - Functions - Part 1 </title>
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="hw3p1.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+			<a href="hw3.html" class="button" aria-label="homework 3">HW 3 Page</a>
+			<a href="hw3p2.html" class="button" aria-label="part 2 earnings">Part 2</a>
+			<a href="hw3p3.html" class="button" aria-label="part 3 celsius to fahrenheit">Part 3</a>
+			<a href="hw3ec.html" class="button" aria-label="Extra Credit multiplication">Extra Credit</a>
+		</nav>
+		<h1>Part 1</h1>
+	</header>
+	<main>	
+
+	<h2>Student Grades</h2>
+	<form>
+		<table>
+			<caption>Input student's grades to receive final average</caption>
+			<tbody>
+			<tr>
+			<th scope="row">Homework Average</th>
+			<td><input type="number" name="hwAvg" id="hwAvg" required value="0"></td>
+			</tr>
+			<tr>
+			<th scope="row">Mid-term Exam Score</th>
+			<td><input type="number" name="midTerm" id="midTerm" required value="0"></td>
+			</tr>
+			<tr>
+			<th scope="row">Final Exam Score</th>
+			<td><input type="number" name="finalExam" id="finalExam" required value="0"></td>
+			</tr>
+			<tr>
+			<th scope="row">Participation</th>
+			<td><input type="number" name="prtptn" id="prtptn" required value="0"></td>
+			</tr>
+			</tbody>
+		</table>
+		<div id ="error"></div> 
+		<label for="results">Final Average:</label>
+		<br>
+		<textarea id="results" disabled></textarea>
+		<br>
+		<input type="button" class="button" onclick="process()" value="SUBMIT">
+		<input type="reset" class="button" value="RESET" onclick="res()">
+	</form>
+	</main>
+	
+
+</body>
+</html>

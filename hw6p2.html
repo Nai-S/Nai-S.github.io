@@ -1,0 +1,42 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="CNIT 133 - Homework Assignment 6- Objects- part 2 - uses the String method charAt to determine the number of occurrences of the search character">
+    <title>Homework 6 - Objects - Part 2</title>
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="hw6p2.js"></script>
+  
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+			<a href="hw6.html" class="button" aria-label="homework 6 Page">HW 6 Page</a>
+			<a href="hw6p1.html" class="button" aria-labe="Part 1 RegExp"> Part 1</a>
+			<a href="hw6p3.html" class="button" aria-label="part 3 string method split"> Part 3</a>
+		</nav>
+		<h1>Part 2</h1>
+	</header>
+	<main>
+		    <form name="myForm">
+         
+         <label for="key"> Enter a character to search for</label>
+            <input id="key" type="text" size="5" autofocus="">
+            <input type="button" value="Search" class="button" onclick="search();">
+           
+
+         <br><br>
+         
+            <p>Occurrences of search character in "I am Learning about Objects in JS":</p>
+            <textarea cols="30" rows="1" id="output" readonly=""></textarea>
+          <br><br>
+         <input type="reset" value="Reset" class="button" onClick="location.reload();">
+        
+      </form>
+	</main>
+	
+</body>
+</html>

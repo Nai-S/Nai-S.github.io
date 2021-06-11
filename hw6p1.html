@@ -1,0 +1,59 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="CNIT 133 - Homework Assignment 6- Objects- part 1 - Using Math.round, Math.sqrt and toFixed to calculate and RegExp to validate specific decimal positions<">
+    <title>Homework 6 - Objects -Part 1</title>
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="hw6p1.js"></script>
+    <style>
+    	textarea {
+    		width: 450px;
+    	}
+    	#cal {
+    		margin-top: 5px;
+    	}
+    	#number {
+    		height: 1.5em;
+    	}
+    	#errOut {
+    		/*font-size: 1.25em;*/
+    		color: red;
+    		background-color: white;
+    		
+    		display: inline-flex;
+
+    	}
+    </style>
+  
+</head>
+
+<body>
+	<header>
+		<nav>
+      <a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
+			<a href="hw6.html" class="button" aria-label="homework 6 Page">HW 6 Page</a>
+			<a href="hw6p2.html" class="button" aria-label="part 2 chartAt"> Part 2</a>
+			<a href="hw6p3.html" class="button" aria-label="part 3 string method split"> Part 3</a>
+		</nav>
+		<h1>Part 1</h1>
+	</header>
+	<main>
+		
+		       <div id ="errOut"></div><br><br>
+
+      <form name="myForm">
+      	
+         <label for="number">Enter a number with at least 4 decimal positions <br>(example: 1.1234):</label> <br>
+         <input type="number" id="number" required="" autofocus=""> <br>
+         <input type="button" value="Calculate" class="button" id="cal" onclick="roundNumber();"><br><br>
+         <textarea name = "output" rows = "8" cols = "60" readonly>
+         </textarea><br>   
+        <input type="reset" value="Reset" class="button" onClick="res();">
+       
+      </form>
+	</main>
+	
+</body>
+</html>

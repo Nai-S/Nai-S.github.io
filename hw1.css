@@ -1,0 +1,171 @@
+
+
+    	body{
+    		margin:20px;
+        background-image: url("blackWood.jpg");
+       /* background-color: #050505;*/
+    		border:0;
+        padding: 20px 30px 20px 30px;
+    		/*-moz-box-shadow:    inset 0 0 10px #ffffff;
+   			-webkit-box-shadow: inset 0 0 10px #ffffff;
+   			box-shadow:         inset 0 0 10px #ffffff;*/
+    		font: 1.55em Arial;
+    		text-align: center;
+        /*-webkit-text-stroke: 1px black;*/
+        color: #ffffff;
+
+      }
+
+    	h1 {
+        /*text-shadow: 2px 2px 2px #dddddd;*/
+    
+    	}
+         
+
+  .button {
+    		width: 198px;
+    		text-decoration: none;
+			  background-color: cyan;
+        margin-bottom: 0px;
+			  padding: 2px 6px 2px 6px;
+			  border-top: 1px solid #000000;
+			  border-right: 2px solid #000000;
+			  border-bottom: 2px solid #000000;
+			  border-left: 1px solid #000000;
+			  -moz-box-shadow:    inset 0 0 10px #000000;
+   			-webkit-box-shadow: inset 0 0 10px #000000;
+   			box-shadow:         inset 0 0 10px #000000;
+        font: 1em Arial;
+        color: #050505;
+        text-align: center;
+        -webkit-text-stroke: 0;
+        
+
+
+        }
+		#flip {
+            width: 500px;
+
+		}
+		ol{
+			list-style: none;
+			padding-left: 0;
+			
+		}
+		 li, /*table*/{
+		 	margin: 5px;
+		 	display: inline-flex; 	
+
+		 }
+     table{
+      margin-left: auto;
+      margin-right: auto;
+     }
+    textarea{
+      width: 300px;
+      height: 200px;
+      font-size: 1em;
+      font-weight: bolder;
+          
+
+
+         }
+   
+    div > label {
+        display: inline-block;
+        width: 350px;
+        text-align: right;
+        
+
+    }
+    input {
+        margin: 0;
+        padding: 0;
+        width: auto ;
+        height: auto;
+        text-align: right;
+        font-size: .75em;
+        color: #000000;
+        
+        
+    }
+
+
+    
+   #currency, #flip {
+      display:inline-block;
+      width: 75%;
+
+  }
+  table, th, td {
+    border: 3px solid white;
+  }
+#error, .error {
+    color: red;
+    -webkit-text-stroke: 1px black;
+    background-color: white;
+    font-size: .75em;
+
+
+}
+
+#myform label.error {
+  display: block;
+  /*border-radius: 15%;*/
+  border: 2px dashed red;
+}
+
+#myform input.error, #myform select.error {
+  /*  background-color: red;*/
+   /* color: white;*/
+    /*font-weight: bold;*/
+}
+
+ .ui-tooltip {
+      border: 1px solid white;
+      width: 300px;
+      height: auto;
+      background-color: white;
+
+ }      
+   
+.ui-tooltip-content {
+      font-size: .75em;
+      color: red;
+
+}     
+.dragBox {
+   justify-content: center;
+   display: inline-flex;
+
+ }
+
+#draggable {
+  width: 200px;
+  border: 2px dashed white;
+}
+
+.ui-dragging {
+  text-align: center;
+  width: 200px;
+  border: 2px dashed white;
+  background-color: red;
+}
+
+.ui-draggable-dragging {
+  background-color: yellow;
+
+}
+
+ 
+div#transbox {
+  display: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  opacity: .7;
+}  
+    
+select {
+  font-size: 1em;"
+}
