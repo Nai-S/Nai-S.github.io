@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="CNIT 133 - Homework Assignment 6- Objects- part 1 - Using Math.round, Math.sqrt and toFixed to calculate and RegExp to validate specific decimal positions<">
-    <title>Homework 6 - Objects -Part 1</title>
+    <meta name="description" content="CNIT 133 - Homework Assignment 6- Objects- Using Math.round, Math.sqrt and toFixed to calculate and RegExp to validate specific decimal positions<">
+    <title>Homework 6 - Objects - Math.round, Math.sqrt and toFixed</title>
     <link rel="stylesheet" type="text/css" href="hw1.css">
     <script src="hw6p1.js"></script>
     <style>
     	textarea {
-    		width: 450px;
+    		width: 800px;
+        height: auto;
     	}
     	#cal {
     		margin-top: 5px;
@@ -21,7 +22,7 @@
     		/*font-size: 1.25em;*/
     		color: red;
     		background-color: white;
-    		
+    		font-weight: bold;
     		display: inline-flex;
 
     	}
@@ -32,27 +33,30 @@
 <body>
 	<header>
 		<nav>
-      <a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
-			<a href="hw6.html" class="button" aria-label="homework 6 Page">HW 6 Page</a>
-			<a href="hw6p2.html" class="button" aria-label="part 2 chartAt"> Part 2</a>
-			<a href="hw6p3.html" class="button" aria-label="part 3 string method split"> Part 3</a>
+      <a href="hw1.html" class="button" > Homework Assignments Main Page</a>
+			<a href="hw6.html" class="button" >Homework 6 Home Page</a>
+			<a href="hw6p2.html" class="button" > String method charAt</a>
+			<a href="hw6p3.html" class="button"> string method split</a>
 		</nav>
-		<h1>Part 1</h1>
+		<h1>Math.round, Math.sqrt and toFixed</h1>
 	</header>
 	<main>
+
+          <p>Use this form to round your number to the nearest, integer, tenth, hundredth, and thousandth</p>
 		
-		       <div id ="errOut"></div><br><br>
+		       <div id ="errOut" role="alert"></div><br><br>
 
       <form name="myForm">
       	
          <label for="number">Enter a number with at least 4 decimal positions <br>(example: 1.1234):</label> <br>
-         <input type="number" id="number" required="" autofocus=""> <br>
-         <input type="button" value="Calculate" class="button" id="cal" onclick="roundNumber();"><br><br>
-         <textarea name = "output" rows = "8" cols = "60" readonly>
+         <input type="text" id="number" required="" autofocus="" > <br>
+         <button type="button" value="Calculate" class="button" id="cal" onclick="roundNumber();" >Submit</button><br><br>
+         <textarea name="output" rows = "10" cols = "60" readonly role="status">
          </textarea><br>   
-        <input type="reset" value="Reset" class="button" onClick="res();">
+          
        
       </form>
+      <button type="Reset" value="Reset" class="button" onClick="res();" >Reset</button>
 	</main>
 	
 </body>

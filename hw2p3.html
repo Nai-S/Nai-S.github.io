@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="JS Basic Operations- counting positives, negatives, and zero number from five user inputs.">
-    <title>Homework 2 - Basic Operations - Part 3</title>
+    <title>Homework 2 - Basic Operations - Counting Integers</title>
 <!--     <meta name="viewport" content="width=device-width, initial-scale=1" />
  -->    <link rel="stylesheet" type="text/css" href="hw1.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,18 +18,18 @@
 <body>
 	<header>
 		<nav>
-			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
-			<a href="hw2.html" class="button" aria-label="Homework 2">HW2 Page</a>
-			<a href="hw2p1.html" class="button" aria-label="part 1 document.write">Part 1</a>
-			<a href="hw2p2.html" class="button" aria-label="part 2 sum, average and product">Part 2</a>
-			<a href="hw2ec.html" class="button" aria-label="Monetary Exchange Rate">Extra Credit</a>
+			<a href="hw1.html" class="button" >Homework Assignments Main Page</a>
+			<a href="hw2.html" class="button" >Homework 2 Page</a>
+			<a href="hw2p1.html" class="button" >document.write</a><br><br>
+			<a href="hw2p2.html" class="button" >Sum, Average and Product</a>
+			<a href="hw2ec.html" class="button" >Monetary Exchange Rate</a>
 		</nav>
-		<h1>Part 3</h1>
+		<h1>Counting Integers</h1>
 	</header>
 <hr>
 	<main>	
 		<section>
-			<h2>Counting Integers</h2>
+			
 				
 			<p>Insert 5 integers below to find the count of positives, negatives and zeros. </p>
 			<form id="formInt" name="formInt">
@@ -51,10 +51,10 @@
 				<br>
 				</div>
 				<label for="resultInt">Result:</label><br>
-				<textarea name="resultInt" id="resultInt" rows="8" cols="40"></textarea>
+				<textarea name="resultInt" id="resultInt" rows="8" cols="40" role="status"></textarea>
 				<br>
-				<input type="reset" value="RESET" class="button" onclick="document.getElementById('int0').focus();">
-				<input type="button" value="SUBMIT" class="button" onclick="calcInt();">
+				<button type="reset" value="RESET" class="button" onclick="document.getElementById('int0').focus();">Reset</button>
+				<button type="button" value="SUBMIT" class="button" onclick="calcInt();">Submit</button>
 			</form>
 		</section>
 	</main>

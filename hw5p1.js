@@ -2,6 +2,11 @@
 
 $(document).ready(function(){
 
+  $("#myform").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
   $("#myform").validate({
 
 		messages: {
@@ -15,7 +20,7 @@ $(document).ready(function(){
 
   errorPlacement: function(error, element) {
   if ( element.is(":radio") || element.is(":checkbox")) {
-    error.appendTo( element.parent());
+    error.appendTo( element.parent().focus());
   } else {
     error.insertAfter(element);
   }

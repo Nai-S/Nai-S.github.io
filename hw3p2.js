@@ -13,9 +13,12 @@ $(document).ready(function(){
         it2: { required: true, number: true, min:0 },
         it3: { required: true, number: true, min:0 },
         it4: { required: true, number: true, min:0 }
-	  }
+	  }	  
+
+
+	 
 	});	  
-});
+		
 
 
 
@@ -53,6 +56,7 @@ function getEarnings(){
 	document.getElementById("wkEarn").value = wkEarn.toFixed(2);
 	
 	}
+
 }
 
 

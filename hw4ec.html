@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Use of nested while or for statements to create a hollow square with astrisks">
-    <title>Homework 4 - Looping Statements - Extra Credit</title>
+    <title>Homework 4 - Looping Statements - Nested "for" and "while" statements</title>
     <link rel="stylesheet" href="hw1.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
@@ -14,27 +14,28 @@
 <body>
 		<header>
 			<nav>
-			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
-			<a href="hw4.html" class="button" arial-label="homework 4 page"> HW 4 Page</a>
-			<a href="hw4p1.html" class="button" aria-label="part 1 for and while statements"> Part 1</a>
-			<a href="hw4p2.html" class="button" aria-label="part 2 compound interest"> Part 2</a>
+			<a href="hw1.html" class="button" > Homework Assignments Main Page</a>
+			<a href="hw4.html" class="button" > Homework 4 Home Page</a>
+			<a href="hw4p1.html" class="button"> "for" and "while" statements</a>
+			<a href="hw4p2.html" class="button" > Compound Interest</a>
 			</nav>
-			<h1>Extra Credit</h1>
+			<h1>Nested "for" and "while" statements</h1>
 	</header>
 	<main>
 		<h2>Hollow Square with asterisks (*)</h2>
+		<p></p>
+
 		<form id="hollowSquare">
-		<label for="userInput">Please input a number from 2-10</label>
-		<input type="number" name="userInput" id="userInput" min="2" max="10" onfocus="clearResults();">
+		<label for="userInput">Please input a number from 2 through 10 to create a hollow square made of asterisks</label>
+		<input type="number" name="userInput" id="userInput" min="2" max="10" onfocus="clearResults();" autofocus="">
 		<br><br>
 		<div id="transbox">
-			<div id="results" style="font-family: monospace, Arial;">
-				
+			<div id="results" style="font-family: monospace, Arial;font-color:black;font-size: 1.2em;" role="alert" aria-label="A hollow square made of asterisks, number of asterisks  in each row and column correlates with user input">
 			</div>
 		</div>
 		<br><br>
-		<input type="button" class="button" name="Submit" value="Submit" onclick="runSq();">
-		<input type="reset" class="button" name="reset" value="Reset" onclick="window.location.reload();">
+		<button type="button" class="button" name="Submit" value="Submit" onclick="runSq();">Submit</button>
+		<button type="reset" class="button" name="reset" value="Reset" onclick="window.location.reload();">Reset</button>
 		</form>
 	
 	

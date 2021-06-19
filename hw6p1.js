@@ -1,6 +1,6 @@
  function roundNumber()
          {
-          var errMsg = "Invalid input! Please enter at least 4 decimal positions!";
+          var errMsg = "Invalid input! Please enter a number with at least 4 decimal positions!";
           
           var number = document.getElementById("number").value;
           var numRegExp = /^(\d{0,99}?)(.\d{4,99})$/; //using RegExp for required format of user input (\d{minimun digits, max digits})
@@ -21,9 +21,9 @@
             var num = parseFloat(document.getElementById("number").value);
 
             document.myForm.output.value = 
-               "The entered number: " + num +
+               "You entered   : " + num +
                "\n -rounded to the nearest integer using math round: " + 
-                  roundToIntegerRound( num ) +
+                  roundToIntegerRound( num ) + 
                "\n -rounded to the nearest integer using math sqrt and math round: " + 
                   roundToSquareRootRound( num ) +
                // "\n rounded to the nearest integer using math floor: " + 

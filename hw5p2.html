@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Two pulldown menus, one with onchange event handler and the other with onclick event handler">
-    <title>Homework 5 - Arrays - Part 2 </title>
+    <title>Homework 5 - Arrays - Onchange & Onclick</title>
     <link rel="stylesheet" type="text/css" href="hw1.css">
     <script src="hw5p2.js"></script>
     <style>
@@ -17,22 +17,21 @@
 <body>
 	<header>
 		<nav>
-			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
-			<a href="hw5.html" class="button" aria-label="homework 5 page">HW 5 Page</a>
-			<a href="hw5p1.html" class="button" aria-label="part 1 validating input box"> Part 1</a>
-			<a href="hw5p3.html" class="button" aria-label="part 3 state info"> Part 3</a>
+			<a href="hw1.html" class="button" aria-label="back to H Main Page">Homework Assignments Main Page</a>
+			<a href="hw5.html" class="button" aria-label="homework 5 page">Homework 5 Home Page</a><br><br>
+			<a href="hw5p1.html" class="button" aria-label="part 1 validating input box"> input box, radio buttons, checkboxes</a>
+			<a href="hw5p3.html" class="button" aria-label="part 3 state info"> State Info</a>
 		</nav>
-		<h1>Part 2</h1>
+		<h1>Onchange & Onclick</h1>
 		
 		
 	</header>
 	<main>
-		<h2>Event Handlers</h2>
-		<p> ~ onchange & onclick~</p>
+		
 		<form>
 			<h2>Choose your favorite online shopping website (using onChange event handler)</h2>
-			<p>Note: Once a selection is made, you will be automatically taken to the website in a new tab/window</p>
-				<select name="storeList" onChange="goToNewPage(this.form);">
+			<p id="note1">Note: Once a selection is made, you will be automatically taken to the website in a new tab/window</p>
+				<select name="storeList" onChange="goToNewPage(this.form);" aria-describedby="note1">
 					<option>Select one:</option>
 					<option value="http://www.amazon.com/">Amazon</option>
 					<option value="http://www.target.com/">Target</option>
@@ -45,15 +44,15 @@
 
 		<form>
 			<h2>Choose your favorite online shopping website (using onClick event handler)</h2>
-			<p>Note:Click "Go" to be taken to the selcted website</p>
-				<select name="storeList">
+			<p id="note2">Note: Click "Go" button to be taken to the selcted website</p>
+				<select name="storeList" aria-describedby="note2">
 					<option>Select one:</option>
 					<option value="http://www.amazon.com/">Amazon</option>
 					<option value="http://www.target.com/">Target</option>
 					<option value="http://www.costco.com/">Costco</option>
 					<option value="http://www.walmart.com/">Walmart</option>
 				</select>
-			<input type="button" class="button" value="Go" onClick="goToNewPage(this.form);" style="max-width: 70px;">
+			<button class="button" value="Go" onClick="goToNewPage(this.form);" style="max-width: 70px;">Go</button>
 		</form>
 	</main>
 	

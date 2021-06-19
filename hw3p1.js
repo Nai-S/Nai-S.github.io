@@ -1,7 +1,7 @@
 function process() {
 var hwAvg, midTerm, finalExam, prtptn, finalAvg;
 
-var errMsg1="Invalid HW Avg, Mid-Term Score, Final Exam, or Participation input. Please fill out each field with values 0 to 100!";
+var errMsg1="Invalid Homework Average, Mid-Term Score, Final Exam, or Participation input. Please fill out each field with values 0 to 100!";
 
 hwAvg = parseFloat(document.getElementById("hwAvg").value);
 midTerm = parseFloat(document.getElementById("midTerm").value); 

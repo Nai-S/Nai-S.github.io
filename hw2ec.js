@@ -3,6 +3,15 @@ $(document).ready(function(){
 
   		$("#flip").click(function(){
     	$("#panel").slideToggle("slow");
+
+        var flip= document.getElementById("flip").getAttribute("aria-expanded");
+        if (flip == "true") {
+            flip = "false"
+        }
+        else {
+            flip = "true"
+        }
+            document.getElementById("flip").setAttribute("aria-expanded", flip);
     		});
 		
 		$("#usV").focus(function() {
@@ -15,7 +24,7 @@ $(document).ready(function(){
 function calcRate() {
 	var usDol, pound, euro, yen, canDol, peso, poundR, euroR, yenR, canR, pesoR;
 	var usV, poundV, euroV, yenV, canV, pesoV;
-	var errorMessageEx = "<strong style='color:red;font-size:1.1em;text-decoration:underline;'>Invalid input. Please input a US dollar amount!</strong>";
+	var errorMessageEx = "<strong style='color:red;font-size:1.1em;font-weight:bold;text-decoration:underline;'>Invalid input. Please input a US dollar amount!</strong>";
     
 			usDol = document.getElementById("usV").value;
 			usV = parseFloat(usDol);
@@ -52,7 +61,7 @@ function calcRate() {
     			document.getElementById("pesoV").value = pesoV.toFixed(2);
     			
     		}
-
+            
 
 }
     		function resRate()

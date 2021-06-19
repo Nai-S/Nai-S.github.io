@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
     <meta name="description" content="JS Functions-calculating Salesperson's weekly earnings.">
-    <title>Homework 3 - Functions - Part 2</title>
+    <title>Homework 3 - Functions - Sales & Earnings</title>
     <link rel="stylesheet" type="text/css" href="hw1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
@@ -16,17 +16,17 @@
 	
 	<header>
 		<nav>
-			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
-			<a href="hw3.html" class="button" aria-label="homework 3">HW 3 Page</a>
-			<a href="hw3p1.html" class="button" aria-label="part 1 grade average">Part 1</a>
-			<a href="hw3p3.html" class="button" aria-label="part 3 celsius to fahrenheit">Part 3</a>
-			<a href="hw3ec.html" class="button" aria-label="Extra Credit multiplication">Extra Credit</a>
+			<a href="hw1.html" class="button" >Homework Assignments Main Page</a>
+			<a href="hw3.html" class="button" >Homework 3 Home Page</a>
+			<a href="hw3p1.html" class="button" >Final Grade Average</a><br><br>
+			<a href="hw3p3.html" class="button">Celsius to Fahrenheit</a>
+			<a href="hw3ec.html" class="button" >Elementary Multiplication</a>
 		</nav>
-		<h1>Part 2</h1>
+		<h1>Total Sales & Total Earnings</h1>
 	</header>
 	<main>
-		<h1>Total Sales & Total Earnings</h1>
-		<form id="salesEarnForm">
+		
+		<form id="salesEarnForm" >
 			<label for="person">Salesperson:</label>
 			<input type="text" name="person" id="person" size="20" class="tip" title="Please make sure that the salesperson's name is spelled correctly." style="text-align: left;">
 			<p>Input the numbers of each items sold for each item number:</p>
@@ -42,11 +42,11 @@
 			<label for="it4">Item 4</label>
 			<input type="number" name="it4" id="it4" min="0">
 			<br><br>
-			<input type="button" class="button" name="submit" onclick="getEarnings();" value="Submit">
-			<input type="reset" class="button" name="res"  onclick="window.location.reload();" value="Reset">
+			<button type="button" class="button" name="submit" onclick="getEarnings();" value="Submit">Submit</button>
+			<button type="reset" class="button" name="res"  onclick="window.location.reload();" value="Reset">Reset</button>
 			<br><br>
 
-			<table>
+			<table role="status">
 				<caption>Total Sold & Total Earned</caption>
 				<thead>
 					<tr>
@@ -60,37 +60,36 @@
 					<tr>
 						<th scope="row">1</th>
 						<td>$239.99</td>
-						<td><input type="number" name="nsold1" id="nsold1" disabled=""></td>
-						<td><input type="number" name="tot1" id="tot1" disabled=""></td>
+						<td><input type="number" name="nsold1" id="nsold1" readonly=""></td>
+						<td><input type="number" name="tot1" id="tot1" readonly=""></td>
 					</tr>
 					<tr>
 						<th scope="row">2</th>
 						<td>$129.75</td>
-						<td><input type="number" name="nsold2" id="nsold2" disabled=""></td>
-						<td><input type="number" name="tot2" id="tot2" disabled=""></td>
+						<td><input type="number" name="nsold2" id="nsold2" readonly=""></td>
+						<td><input type="number" name="tot2" id="tot2" readonly=""></td>
 					</tr>
 					<tr>
 						<th scope="row">3</th>
 						<td>$99.95</td>
-						<td><input type="number" name="nsold3" id="nsold3" disabled=""></td>
-						<td><input type="number" name="tot3" id="tot3" disabled=""></td>
+						<td><input type="number" name="nsold3" id="nsold3" readonly=""></td>
+						<td><input type="number" name="tot3" id="tot3" readonly=""></td>
 					</tr>
 					<tr>
 						<th scope="row">4</th>
 						<td>$350.89</td>
-						<td><input type="number" name="nsold4" id="nsold4" disabled=""></td>
-						<td><input type="number" name="tot4" id="tot4" disabled=""></td>
+						<td><input type="number" name="nsold4" id="nsold4" readonly=""></td>
+						<td><input type="number" name="tot4" id="tot4" readonly=""></td>
 					</tr>
-					<tr>
-						<th scope="row" colspan="3">Total Amount Sold:</th>
-						<td><input type="number" name="totAmtSold" id="totAmtSold" readonly></td>
-					</tr>
-					<tr>
-						<th scope="row" colspan="3">Total Weekly Earnings:</th>
-						<td><input type="number" name="wkEarn" id="wkEarn" readonly style="background-color: #ffd84a;"></td>
-					</tr>
-				</tbody>
+						</tbody>
 			</table>
+						<label for="totAmtSold">Total Amount Sold:</label>
+						<input type="number" name="totAmtSold" id="totAmtSold" readonly>
+						<br>
+						<label for="wkEarn">Total Weekly Earnings:</label>
+						<input type="number" name="wkEarn" id="wkEarn" readonly >
+					
+			
 
 		</form>
 	</main>

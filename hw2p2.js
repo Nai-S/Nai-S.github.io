@@ -1,6 +1,8 @@
     $(document).ready(function() {
-                $("button").click(function(){
-                $("#result").fadeTo("slow",0.25);
+                $("#fade").click(function(){
+                $("#result").fadeToggle(3000);
+               
+
                 
             });
         });
@@ -13,7 +15,7 @@
     		var sum = 0;
     		var average = 0;
     		var product = 0;
-			var errorMessage = "<strong style='color:red;font-size:1.1em;text-decoration:underline;'>Invalid input. Please input numbers only!</strong>";
+			var errorMessage = "<strong style='color:red;font-size:1.1em;text-decoration:underline'; role='alert';>Invalid input. Please input numbers only!</strong>";
     		var resultMessage = "";
 
     		number1 = document.getElementById("n1").value;

@@ -16,10 +16,7 @@
 
       }
 
-    	h1 {
-        /*text-shadow: 2px 2px 2px #dddddd;*/
     
-    	}
          
 
   .button {
@@ -105,9 +102,10 @@
   }
 #error, .error {
     color: red;
-    -webkit-text-stroke: 1px black;
+    /*-webkit-text-stroke: 1px black;*/
     background-color: white;
     font-size: .75em;
+    font-weight: bold;
 
 
 }
@@ -120,7 +118,7 @@
 
 #myform input.error, #myform select.error {
   /*  background-color: red;*/
-   /* color: white;*/
+ /*   color: white;*/
     /*font-weight: bold;*/
 }
 
@@ -133,7 +131,8 @@
  }      
    
 .ui-tooltip-content {
-      font-size: .75em;
+      font-weight: bold;
+      font-size: 1em;
       color: red;
 
 }     
@@ -156,7 +155,8 @@
 }
 
 .ui-draggable-dragging {
-  background-color: yellow;
+  background-color: blue;
+
 
 }
 
@@ -165,10 +165,13 @@ div#transbox {
   display: none;
   margin: 10px;
   padding: 10px;
-  background-color: white;
-  opacity: .7;
+  background-color: black;
+  border: 2px solid white;
+ /* opacity: .7;*/
+
 }  
     
 select {
   font-size: 1em;"
 }
+

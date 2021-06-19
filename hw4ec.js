@@ -1,12 +1,20 @@
 
 $(document).ready(function(){
+
+    $("#userInput").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                     // document.getElementById("chkAns").click();
+                }
+            });
     $("#hollowSquare").validate({
    
     rules: 
     {
       userInput: { required: true, number: true, min:2, max:10 }
     }
-  });   
+  });
+
 });
 
 
@@ -56,6 +64,7 @@ var userInput = document.getElementById("userInput").value;
   }
 
    document.getElementById("results").appendChild(squareCont) ;
+  douc
 
 
 }

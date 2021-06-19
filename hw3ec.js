@@ -1,6 +1,12 @@
 
 
 $(document).ready(function(){
+	$("#userAnswer").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                     // document.getElementById("chkAns").click();
+                }
+            });
     $("#multiply").validate({
 	  rules: 
 	  {
@@ -24,11 +30,16 @@ function getAnswer(){
 	
 
 			  if (rightAns == userAnswer) {
-			 		document.getElementById("results").innerHTML = " Very good!";
+			 		document.getElementById("results").innerHTML = " Very good! You are correct!";
 			    	document.getElementById("userAnswer").value = "";
+			    	document.getElementById("results").focus();
+
+
 					
 					setTimeout(function () {
-						var contEnd = prompt ("Want to try another one?", "yes")
+						var contEnd = prompt ("Correct! Would you like to try another one?", "yes")
+						document.getElementById("results").focus();
+
 						if (contEnd == "yes") {
 							window.location.reload();
 						}
@@ -40,12 +51,15 @@ function getAnswer(){
 			
 
 	 		else {
-    			document.getElementById("results").innerHTML = "No. Please try again.";
+    			document.getElementById("results").innerHTML = "Incorrect. Please try again.";
+
+
     			document.getElementById("userAnswer").value = "";
-    			// document.getElementById("userAnswer").focus();
+
+
 		
 				}
-
+// document.getElementById("userAnswer").focus();
 } //end of if valid ()
 } //end of getAnswer ()
 

@@ -5,6 +5,11 @@
 //[Note that 0 degrees Celsius = 32 degrees Fahrenheit].
 
 $(document).ready(function(){
+	$("#degInp").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
     $("#celsFahr").validate({
 	  rules: 
 	  {

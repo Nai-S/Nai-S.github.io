@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="JS Basic Operations using JS to find the sum, average and product from three user integer input.">
-    <title>Homework 2 - Basic Operations - Part 2</title>
+    <title>Homework 2 - Basic Operations - sum, average and product</title>
    <!--  <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <link rel="stylesheet" type="text/css" href="hw1.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,13 +19,13 @@
 	<header>
 		
 		<nav>
-			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
-			<a href="hw2.html" class="button" aria-label="Homework 2">HW2 Page</a>
-			<a href="hw2p1.html" class="button" aria-label="part 1 document.write">Part 1</a>
-			<a href="hw2p3.html" class="button" aria-label="part 3 counting">Part 3</a>
-			<a href="hw2ec.html" class="button" aria-label="Monetary Exchange Rate">Extra Credit</a>
+			<a href="hw1.html" class="button" >Homework Assignments Main Page</a>
+			<a href="hw2.html" class="button" >Homework 2 Home Page</a>
+			<a href="hw2p1.html" class="button" >document.write</a>
+			<a href="hw2p3.html" class="button" >Counting Integers</a>
+			<a href="hw2ec.html" class="button" >Monetary Exchange Rate</a>
 		</nav>
-		<h1>Part 2</h1>
+		<h1>Sum, Average & Product</h1>
 	</header>
 <hr>
 	<main>
@@ -33,28 +33,29 @@
 				
 			<h2>Please enter 3 numbers to find the sum, average and product.</h2>
 			<form id="myform">
+				<p id="error"></p>
 				<div>
 				<label for="n1">Insert first number:</label>
-				<input type="text" id="n1" autofocus>
+				<input type="text" id="n1" required="" autofocus>
 				<br>
 				<label for="n2">Insert second number:</label>
-				<input type="text" id="n2">
+				<input type="text" id="n2" required="">
 				<br>
 				<label for="n3">Insert third number:</label>
-				<input type="text" id="n3">
+				<input type="text" id="n3" required="">
 				<br>
 				</div>
 				<label for="result">Result:</label><br>
-				<textarea id="result" rows="4" readonly></textarea>
+				<textarea id="result" rows="4" readonly role="status"></textarea>
 				<br>
-				<input type="reset" value="reset" class="button" onclick="res();">
-				<input type="button" value="calculate" class="button" onclick="calc(); return(false);">
+				<button type="reset" value="reset" class="button" onclick="res();">Reset</button>
+				<button type="button" value="calculate" class="button" onclick="calc(); return(false);">Calculate</button>
 				<br><br>
-				<button type="button" class="button">
-					Click to fade results
+				<button type="button" class="button" id="fade">
+					Fade in/out results
 				</button>
 			</form>
-			<p id="error"></p>
+			
 		</section>
 	</main>
 	<hr>

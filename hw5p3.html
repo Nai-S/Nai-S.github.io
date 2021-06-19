@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Using arrays to give State info">
-    <title>Homework 5 - Arrays - Part 3</title>
+    <title>Homework 5 - Arrays - State Info</title>
 
     <link rel="stylesheet" type="text/css" href="hw1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="hw5p3.js"></script>
   
 </head>
@@ -14,15 +15,49 @@
 <body>
 	<header>
 		<nav>
-			<a href="hw1.html" class="button" aria-label="back to Homework Assignments Main Page">Main Page</a>
-			<a href="hw5.html" class="button" aria-label="homework 5 page">HW 5 Page</a>
-			<a href="hw5p1.html" class="button" aria-label="part 1 validating input box"> Part 1</a>
-			<a href="hw5p2.html" class="button" aria-label="part 2 pulldown menus"> Part 2</a>
+			<a href="hw1.html" class="button" > Homework Assignments Main Page</a>
+			<a href="hw5.html" class="button" >Homework 5 Home Page</a>
+			<a href="hw5p1.html" class="button" > input box, radio buttons, checkboxes</a>
+			<a href="hw5p2.html" class="button" > Onchange & Onclick</a>
 		</nav>
 		
-		<h1>Part 3</h1>
+		<h1>Search for State Poplulation</h1>
 	</header>
 	<main>
+		<form name="SearchForm">
+			
+			<label for="inputState">Enter a State (example: CA or California):</label>
+			<input type="text" size="15" name="inputState" id="inputState" autofocus> 
+			<button type="button" value="Get State Info " name="search" id="search" class="button" onclick="getInfo();">Get State Info</button>
+
+<br>
+				<div style="display: none;text-align: center;" id="Error" role="alert">
+			<label for="errMsg" style="visibility: hidden;" >Error!</label><br>
+			<input type="text" size="20" name="errMsg" id="errMsg" style="text-align:center;font-size: 1em; font-weight: bold;font-color:red;" readonly="" tabindex="-1">
+			</div>
+			<div style="display: none;" id="results">
+			<p>Thanks for your inquiry, here is the information you requested:</p>
+		<!-- 	positioning the errMsg is important for the page to render properply  -->
+			
+			<span id="stateAbbr" ></span><br>
+			<span id="state" ></span><br>
+			<span id="capital" ></span><br>
+			<span id="pop" ></span><br>
+			</div>
+			<br><br>
+			<!-- Below only is another way to display results in input text fields correlated with the js that commented out
+			<label for="stateAbbr">State Abbr = </label>
+			<input type="text" size="15" name="stateAbbr" id="stateAbbr" disabled=""><br>
+			<label for="state">State = </label>
+			<input type="text" size="15" name="state" id="state" disabled=""><br>
+			<label for="capital">Capital = </label>
+			<input type="text" size="15" name="capital" id="capital" disabled=""><br>
+			<label for="pop">Population = </label>
+			<input type="text" size="15" name="pop" id="pop" disabled=""> -->
+
+			<button value="Reset" class="button" onclick="location.reload();">Reset</button>
+		</form>
+		<br>
 		<table>
 			<caption>State Information</caption>
 			<thead>
@@ -80,36 +115,9 @@
 			</tbody>
 		</table>
 
-<br>
 
-		<form name="SearchForm">
-			
-			<label for="inputState">Enter a State (example: CA or California):</label>
-			<input type="text" size="15" name="inputState" id="inputState" autofocus> 
-			<input type="button" value=" State Info " name="search" id="search" class="button" onclick="getInfo();">
 
-<br>
-
-			<p>Thanks for your inquiry, here is the information you requested:</p>
-		<!-- 	positioning the errMsg is important for the page to render properply  -->
-			<input type="text" size="20" name="errMsg" id="errMsg" style="display: none;text-align: center;">
-			<span id="stateAbbr" ></span><br>
-			<span id="state" ></span><br>
-			<span id="capital" ></span><br>
-			<span id="pop" ></span><br>
-			
-			<!-- Below only is another way to display results in input text fields correlated with the js that commented out
-			<label for="stateAbbr">State Abbr = </label>
-			<input type="text" size="15" name="stateAbbr" id="stateAbbr" disabled=""><br>
-			<label for="state">State = </label>
-			<input type="text" size="15" name="state" id="state" disabled=""><br>
-			<label for="capital">Capital = </label>
-			<input type="text" size="15" name="capital" id="capital" disabled=""><br>
-			<label for="pop">Population = </label>
-			<input type="text" size="15" name="pop" id="pop" disabled=""> -->
-
-			<input type="reset" value="Reset" class="button" onclick="location.reload();">
-		</form>
+		
 	</main>
 	
 </body>

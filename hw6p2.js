@@ -1,5 +1,14 @@
+  $(document).ready(function(){
+  $("#key").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
+});
+
   function search()
          {
+
             var count=0;
             
             var key=document.getElementById("key").value.toLowerCase().charAt( 0 );
@@ -59,5 +68,5 @@
                // document.getElementById("output").value=key + " not found";
             else
                document.getElementById("output").value=count + 
-                  " occurrence(s) of " + key + " found";
+                  " occurrences of " + key + " found";
          }

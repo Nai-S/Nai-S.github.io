@@ -19,9 +19,10 @@
       //create  all tables
       for (var tables = 0; tables <= 2; tables++ ) {
             document.write("<table>");
+            document.write("<caption>Compound Interest on $1000 Principal for interest rates of 5%, 6%, and 7%, for years 1 through 10</caption>");
           
               document.write("<tr>")
-              document.write("<th>Year</th>");
+              document.write("<th></th>");
               document.write("<th>Amount on deposit</th>");
               document.write("<th>Interest Rate</th>");
               document.write("</tr>");

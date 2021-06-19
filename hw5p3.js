@@ -1,4 +1,12 @@
-
+$(document).ready(function(){
+    $("#inputState").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
+   
+      
+    }); 
 
 var stateInfoArray = 
               [ ["AL", "ALABAMA", "MONTGOMERY", "4,887,871"],                     
@@ -28,7 +36,7 @@ function getInfo()
           console.log(searchKey);
                  //check if search key = 1st or 2nd element of each row
       
-
+                 document.getElementById("results").style.display = "block";
                 //if search key = 1st or 2nd element of a particular row
                 //then place in input boxes for all state info of inputted state
                 
@@ -47,15 +55,17 @@ function getInfo()
          row = stateInfoArray.length;   //ends loop if match found
          found = true;
      } //end of if statement
-    } //end of for statement
+     //end of for statement
 
 
       // if the var found is place here the error message will always be displayed whether or not the results are found.
       // Order of prcoss is important for this is important for the page to render out properly!
-   if ( found == false ) {
+   else if ( found === false ) {
+        document.getElementById("Error").style.display = "inline-block";
         document.getElementById("errMsg").style.display = "inline-block";
+
         document.forms["SearchForm"].elements["errMsg"].value= "State Info not found!"; 
-        // make sure the results are clear if the next input is an error
+        // make sure the results are cleared if the next input is an error
          document.getElementById("stateAbbr").innerHTML = " ";
          document.getElementById("state").innerHTML = " ";
          document.getElementById("capital").innerHTML = " ";
@@ -69,4 +79,4 @@ function getInfo()
          // document.forms["SearchForm"].elements["pop"].value = " ";
        }
 
-  }
+  }}
