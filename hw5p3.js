@@ -37,6 +37,8 @@ function getInfo()
                  //check if search key = 1st or 2nd element of each row
       
                  document.getElementById("results").style.display = "block";
+                document.getElementById("Error").style.display = "none";
+
                 //if search key = 1st or 2nd element of a particular row
                 //then place in input boxes for all state info of inputted state
                 

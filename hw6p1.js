@@ -84,7 +84,4 @@
         //       return(Math.round( number *1000) / 1000 );
         //     }
 
-        function res() {    
-                       document.getElementById("errOut").innerHTML="";
-                       document.getElementById("number").focus();
-                       }
+  

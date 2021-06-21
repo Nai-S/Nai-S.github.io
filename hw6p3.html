@@ -10,6 +10,7 @@
 	<script src="https://rawgit.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js"></script>
 	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <script src="hw6p3.js"></script>
+   
   
 </head>
 
@@ -27,21 +28,22 @@
 
       <form name="myForm" id="myForm">
 
-      
-
+                
+               <p>Note: if all seven numbers are not entered, split button will not work.</p>
                <label for="phone">Enter a Phone Number:</label><br>
                <input name = "phone" type = "text" size = "10" id="phone" autofocus required><br><br>
                <button type="button" value = "Split" class="button" onclick = "parsePhone()">Split</button>
                <br><br>
-                
-               <label for="areaCode">Area Code:</label>
+            <div role="status">
+               <label for="areaCode" style="width: auto;">Area Code:</label>
                <input name = "areaCode" type = "text" size = "3" id="areaCode" readonly="">
             	<br>
-               <label for="first3">First 3 digits:</label>   
+               <label for="first3" style="width: auto;">First 3 digits:</label>   
                <input name = "first3" type = "text" size = "3"  id="first3" readonly="">
                <br>
-               <label for="last4">Last 4 digits:</label>
+               <label for="last4" style="width: auto;">Last 4 digits:</label>
                <input name = "last4" type = "text" size = "4" id="last4" readonly="">
+            </div>
                  <br><br>
         
          <button type="reset" class="button" value="Reset" onclick="window.location.reload();">Reset</button>

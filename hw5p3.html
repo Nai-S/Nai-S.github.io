@@ -35,7 +35,7 @@
 			<label for="errMsg" style="visibility: hidden;" >Error!</label><br>
 			<input type="text" size="20" name="errMsg" id="errMsg" style="text-align:center;font-size: 1em; font-weight: bold;font-color:red;" readonly="" tabindex="-1">
 			</div>
-			<div style="display: none;" id="results">
+			<div style="display: none;" id="results" role="alert">
 			<p>Thanks for your inquiry, here is the information you requested:</p>
 		<!-- 	positioning the errMsg is important for the page to render properply  -->
 			
@@ -55,7 +55,7 @@
 			<label for="pop">Population = </label>
 			<input type="text" size="15" name="pop" id="pop" disabled=""> -->
 
-			<button value="Reset" class="button" onclick="location.reload();">Reset</button>
+			<button type="reset" value="Reset" class="button" onclick="location.reload();">Reset</button>
 		</form>
 		<br>
 		<table>

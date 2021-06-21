@@ -15,7 +15,7 @@ $(document).ready(function(){
         it4: { required: true, number: true, min:0 }
 	  }	  
 
-
+	  });	
 	 
 	});	  
 		
